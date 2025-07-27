@@ -29,3 +29,7 @@ yarn-error.log*
 
 # OS
 Thumbs.db
+
+# MCP Agent
+Mcp-Agent.py
+mcp-agent.py

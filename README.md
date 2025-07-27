@@ -1,206 +1,419 @@
-# FlexiFi - AI-Powered Finance Dashboard
+# FlexiFi AI 🚀
 
-A modern, animated React web application for FlexiFi, an AI-powered finance and asset analyzer that integrates with Fi's production MCP (Model Context Protocol) server.
+<div align="center">
+  <img src="assets/flexifi-hero-image.png" alt="FlexiFi AI Dashboard" width="800"/>
 
-## Features
+  **Your AI-Powered Financial Assistant is Here**
 
-- **Modern UI/UX**: Sleek design with purple theme and smooth animations
-- **AI-Powered Insights**: Intelligent financial analysis and predictions
-- **Asset Visualizations**: Interactive dashboards and charts
-- **Voice & Text Commands**: Natural language processing for generating visualizations
-- **Investment Analysis**: Comprehensive analysis for stocks, SIPs, mutual funds
-- **Tool Integration**: Seamless integration with existing financial tools
-- **Fi Authentication**: Secure authentication through Fi's production server
-- **Environment Configuration**: Supports both development and production environments
+  Transform complex financial data into actionable insights with our advanced AI. Get personalized recommendations, real-time analysis, and intelligent forecasting through simple conversations.
 
-## Tech Stack
+  [![React](https://img.shields.io/badge/React-18.0-blue.svg)](https://reactjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+  [![Fi Integration](https://img.shields.io/badge/Fi%20Money-Integrated-purple.svg)](https://fi.money/)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+</div>
 
-- **Frontend**: React 18 with TypeScript
-- **Animations**: Framer Motion
-- **Icons**: React Icons
-- **Styling**: CSS3 with custom animations
-- **Backend Integration**: Fi Production MCP server
-- **API Management**: TypeScript service layer with environment configuration
+---
 
-## Getting Started
+## ✨ Features
+
+### 🤖 **AI-Powered Financial Intelligence**
+- **Smart Conversations**: Ask questions about your finances in natural language
+- **Voice & Text Support**: Interact through voice commands or text input
+- **Personalized Insights**: Get tailored recommendations based on your financial data
+- **Predictive Analytics**: AI-driven forecasting for better financial planning
+
+### 📊 **Professional Dashboard**
+- **Real-time Visualizations**: PowerBI-style interactive dashboards
+- **Portfolio Performance**: Track your investments with detailed analytics
+- **Responsive Design**: Seamless experience across all devices
+- **Expandable Chatbot**: Slide-out AI assistant with 65:35 dashboard ratio
+
+### 🎯 **Goal Planning & Predictions**
+- **Future Planner**: Generate savings plans for your financial goals
+- **Stock Insights**: AI-powered stock predictions and market analysis
+- **Investment Strategies**: Personalized recommendations for better returns
+- **Loan Planning**: Smart loan and EMI planning tools
+
+### 🔐 **Secure Fi Integration**
+- **Bank-grade Security**: Secure authentication through Fi Money
+- **Real-time Data**: Live financial data from your Fi account
+- **Privacy First**: Your data stays secure and private
+- **MCP Protocol**: Advanced Model Context Protocol integration
+
+## 🛠️ Tech Stack
+
+| Category | Technology | Purpose |
+|----------|------------|---------|
+| **Frontend** | React 18 + TypeScript | Modern, type-safe UI development |
+| **Styling** | Tailwind CSS + Custom CSS | Responsive design with custom animations |
+| **Animations** | Framer Motion | Smooth, professional animations |
+| **Icons** | React Icons | Comprehensive icon library |
+| **AI Integration** | Google Gemini API | Advanced AI conversations and analysis |
+| **Backend** | Fi Money MCP Server | Real-time financial data integration |
+| **Authentication** | Fi OAuth 2.0 | Secure user authentication |
+| **State Management** | React Hooks + Context | Efficient state management |
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js 16+
-- npm or yarn
-- Access to Fi's production API (for production mode)
+- **Node.js** 16+ and npm/yarn
+- **Fi Money Account** (for production features)
+- **Google Gemini API Key** (for AI features)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd Agentic-Dashboard-Visualizer
+   git clone https://github.com/your-username/FlexiFi.git
+   cd FlexiFi
    ```
 
-2. **Install frontend dependencies**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Environment Configuration**
+3. **Environment Setup**
 
-   The application automatically uses the appropriate environment:
-   - **Development**: Uses `.env.development` (mock server at localhost:8080)
-   - **Production**: Uses `.env.production` (Fi production servers)
-
-   You can override settings by creating a `.env.local` file.
-
-4. **Start the React development server**
+   Create a `.env.local` file in the root directory:
    ```bash
-   # For development (uses mock data)
-   npm start
+   # Fi Money Integration
+   REACT_APP_FI_API_BASE_URL=https://api.fi.money
+   REACT_APP_FI_MCP_ENDPOINT=https://mcp.fi.money
+   REACT_APP_CLIENT_ID=your_fi_client_id
+   REACT_APP_REDIRECT_URI=http://localhost:3000/auth/callback
 
-   # For production build
-   npm run build
+   # Google Gemini AI
+   REACT_APP_GEMINI_API_KEY=your_gemini_api_key
+
+   # Environment
+   REACT_APP_ENVIRONMENT=development
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm start
    ```
 
 5. **Open your browser**
-   Navigate to `http://localhost:3000`
+   Navigate to `http://localhost:3000` and start exploring!
 
-## Project Structure
+### 🎯 First Steps
+
+1. **Connect your Fi account** - Click "Login with Fi" to authenticate
+2. **Explore the dashboard** - View your financial overview and insights
+3. **Chat with AI** - Ask questions about your finances using the chatbot
+4. **Set financial goals** - Use the Goal Planner to create savings plans
+5. **Analyze investments** - Get AI-powered stock insights and predictions
+
+## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   ├── Header.tsx          # Navigation header with login button
-│   ├── Hero.tsx            # Hero section with main CTA
-│   ├── Features.tsx        # Features showcase
-│   ├── About.tsx           # About section with testimonials
-│   ├── Footer.tsx          # Footer with links and contact info
-│   └── AuthModal.tsx       # Fi authentication modal
-├── App.tsx                 # Main application component
-├── index.tsx              # Application entry point
-└── index.css              # Global styles and animations
+FlexiFi/
+├── 📁 public/                    # Static assets
+│   ├── index.html               # Main HTML template
+│   └── manifest.json            # PWA manifest
+├── 📁 src/                      # Source code
+│   ├── 📁 components/           # React components
+│   │   ├── Header.tsx           # Navigation with Fi login
+│   │   ├── Dashboard.tsx        # Main financial dashboard
+│   │   ├── Chatbot.tsx          # AI-powered chatbot
+│   │   ├── GoalPlanner.tsx      # Financial goal planning
+│   │   ├── StockInsights.tsx    # Stock analysis & predictions
+│   │   └── AuthModal.tsx        # Fi authentication modal
+│   ├── 📁 services/             # API and service layer
+│   │   ├── fiService.ts         # Fi Money API integration
+│   │   ├── geminiService.ts     # Google Gemini AI service
+│   │   └── mcpService.ts        # MCP protocol handling
+│   ├── 📁 config/               # Configuration files
+│   │   └── environment.ts       # Environment configuration
+│   ├── App.tsx                  # Main application component
+│   ├── index.tsx               # Application entry point
+│   └── index.css               # Global styles and animations
+├── 📁 assets/                   # Images and static assets
+├── package.json                 # Dependencies and scripts
+├── tsconfig.json               # TypeScript configuration
+└── README.md                   # This file
 ```
 
-## API Configuration
-
-The application supports both development and production environments:
-
-### Production Mode (Default)
-- **API Base URL**: `https://api.fi.money`
-- **MCP Endpoint**: `https://mcp.fi.money`
-- **Authentication**: Full Fi production authentication
-- **Data**: Real user data from Fi servers
-
-### Development Mode
-- **API Base URL**: `http://localhost:8080`
-- **MCP Endpoint**: `http://localhost:8080`
-- **Authentication**: Mock authentication with demo phone numbers
-- **Data**: Simulated data for testing
+## ⚙️ Configuration
 
 ### Environment Variables
+
+Create a `.env.local` file with the following variables:
+
 ```bash
-# Production (.env.production)
+# 🏦 Fi Money Integration
 REACT_APP_FI_API_BASE_URL=https://api.fi.money
 REACT_APP_FI_MCP_ENDPOINT=https://mcp.fi.money
-REACT_APP_ENVIRONMENT=production
+REACT_APP_CLIENT_ID=your_fi_client_id
+REACT_APP_CLIENT_SECRET=your_fi_client_secret
+REACT_APP_REDIRECT_URI=http://localhost:3000/auth/callback
 
-# Development (.env.development)
-REACT_APP_FI_API_BASE_URL=http://localhost:8080
-REACT_APP_FI_MCP_ENDPOINT=http://localhost:8080
+# 🤖 Google Gemini AI
+REACT_APP_GEMINI_API_KEY=your_gemini_api_key
+REACT_APP_GEMINI_MODEL=gemini-pro
+
+# 🌍 Environment Settings
 REACT_APP_ENVIRONMENT=development
+REACT_APP_DEBUG=true
+
+# 📊 Dashboard Settings
+REACT_APP_DASHBOARD_REFRESH_INTERVAL=30000
+REACT_APP_CHATBOT_MAX_HISTORY=50
 ```
 
-## Authentication
+### Development vs Production
 
-The application integrates with Fi's OAuth authentication system:
+| Feature | Development | Production |
+|---------|-------------|------------|
+| **Fi API** | Mock/Sandbox | Live Fi servers |
+| **Authentication** | Demo accounts | Real Fi OAuth |
+| **Data** | Simulated | Real user data |
+| **AI Features** | Limited | Full Gemini integration |
+| **Analytics** | Disabled | Enabled |
 
-### Production Authentication Flow:
-1. Click "Login with Fi" button in the header
-2. **Redirects to Fi's authentication server** (`https://auth.fi.money/oauth/authorize`)
-3. User completes authentication on Fi's secure platform
-4. Fi redirects back to the app with authorization code
-5. App exchanges code for access token and stores session securely
+## 🔐 Authentication & Security
 
-### Development Authentication Flow:
-- **Development**: Uses modal with demo phone numbers for testing (e.g., 1111111111, 2222222222)
-- **Production**: Full OAuth redirect flow with Fi's production servers
+### Fi Money OAuth Integration
 
-### OAuth Configuration:
-- **Client ID**: `flexifi_web_client` (production) / `flexifi_dev_client` (development)
-- **Redirect URI**: `http://localhost:3000/auth/callback` (development) / `https://your-domain.com/auth/callback` (production)
-- **Scopes**: `read:user read:accounts read:transactions`
+FlexiFi uses Fi Money's secure OAuth 2.0 authentication system:
 
-## Demo Phone Numbers
+```mermaid
+sequenceDiagram
+    participant User
+    participant FlexiFi
+    participant Fi_Auth
+    participant Fi_API
 
-For testing purposes, use any of these phone numbers:
-- 1111111111, 2222222222, 3333333333, 4444444444, 5555555555
-- 6666666666, 7777777777, 8888888888, 9999999999, 1010101010
-- And more (see AuthModal component for full list)
+    User->>FlexiFi: Click "Login with Fi"
+    FlexiFi->>Fi_Auth: Redirect to OAuth
+    Fi_Auth->>User: Show login form
+    User->>Fi_Auth: Enter credentials
+    Fi_Auth->>FlexiFi: Return auth code
+    FlexiFi->>Fi_API: Exchange code for token
+    Fi_API->>FlexiFi: Return access token
+    FlexiFi->>User: Show dashboard
+```
 
-## Available Scripts
+### Authentication Flow
 
-### Development Scripts
-- `npm start` - Runs the app in development mode
-- `npm run start:dev` - Switch to development environment and start
-- `npm run start:prod` - Switch to production environment and start
-- `npm build` - Builds the app for production
-- `npm run build:prod` - Switch to production environment and build
-- `npm test` - Launches the test runner
-- `npm eject` - Ejects from Create React App (one-way operation)
+1. **Initiate Login**: User clicks "Login with Fi" button
+2. **OAuth Redirect**: Redirects to Fi's secure authentication server
+3. **User Authentication**: User completes authentication on Fi's platform
+4. **Authorization Code**: Fi redirects back with authorization code
+5. **Token Exchange**: App exchanges code for access token securely
+6. **Session Management**: Secure token storage and session handling
+
+### Security Features
+
+- 🔒 **Bank-grade Encryption**: All data transmission is encrypted
+- 🛡️ **OAuth 2.0 Standard**: Industry-standard authentication protocol
+- 🔑 **Secure Token Storage**: Tokens stored securely in browser
+- ⏰ **Session Timeout**: Automatic logout for security
+- 🚫 **No Password Storage**: FlexiFi never stores your Fi credentials
+
+### Demo Accounts (Development)
+
+For testing in development mode, use these demo phone numbers:
+```
+1111111111, 2222222222, 3333333333, 4444444444, 5555555555
+6666666666, 7777777777, 8888888888, 9999999999, 1010101010
+```
+
+## 📜 Available Scripts
+
+### Development Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start development server with hot reload |
+| `npm run build` | Create production build |
+| `npm test` | Run test suite |
+| `npm run lint` | Run ESLint for code quality |
+| `npm run format` | Format code with Prettier |
+
+### Production Deployment
+
+```bash
+# Build for production
+npm run build
+
+# Serve production build locally (for testing)
+npm install -g serve
+serve -s build
+
+# Deploy to your hosting platform
+# (Vercel, Netlify, AWS, etc.)
+```
 
 ### Environment Management
-- `npm run env:dev` - Switch to development environment
-- `npm run env:prod` - Switch to production environment
-- `npm run env:status` - Show current environment configuration
 
-### Manual Environment Switching
 ```bash
-# Switch to development (mock server)
-node scripts/switch-env.js development
+# Development mode (default)
+npm start
 
-# Switch to production (Fi servers)
-node scripts/switch-env.js production
+# Production build
+npm run build
 
-# Check current environment
-node scripts/switch-env.js status
+# Test production build locally
+npm run serve
 ```
 
-## Features Overview
+## 🎯 Key Features Deep Dive
 
-### 🎨 Modern Design
-- Purple gradient theme
-- Smooth animations and transitions
-- Responsive design for all devices
-- Glass morphism effects
+### 🤖 AI-Powered Chatbot
 
-### 🤖 AI Integration
-- Natural language processing
-- Voice command support
-- Intelligent insights generation
-- Predictive analytics
+The FlexiFi AI chatbot is your personal financial assistant:
 
-### 📊 Visualizations
-- Interactive dashboards
-- Real-time charts and graphs
-- Custom visualization generation
-- Asset performance tracking
+- **Natural Conversations**: Ask questions in plain English
+- **Voice Support**: Speak your queries and get voice responses
+- **Contextual Understanding**: Remembers conversation history
+- **Financial Insights**: Get explanations about your spending patterns
+- **Goal Assistance**: Help setting and tracking financial goals
 
-### 🔒 Security
-- Secure Fi authentication
-- Bank-grade encryption
-- Session management
-- Privacy-focused design
+**Example Conversations:**
+```
+You: "Show me my portfolio performance this month"
+AI: "Your portfolio is up 12.5% this month! Your tech stocks
+    are performing particularly well..."
 
-## Contributing
+You: "How can I save for a bike worth ₹80,000 in 6 months?"
+AI: "Based on your spending patterns, you need to save ₹13,333
+    per month. Here's a personalized savings plan..."
+```
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### 📊 Professional Dashboard
 
-## License
+PowerBI-style dashboard with:
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **Real-time Data**: Live updates from your Fi account
+- **Interactive Charts**: Click and explore your financial data
+- **Responsive Layout**: Adapts to chatbot expansion (65:35 ratio)
+- **Customizable Views**: Personalize your dashboard layout
+- **Export Options**: Download reports and insights
 
-## Support
+### 🎯 Goal Planner
 
-For support, email hello@flexifi.ai or join our community discussions.
+Smart financial planning tools:
+
+- **Savings Calculator**: Calculate how much to save for goals
+- **Timeline Planning**: Set realistic timelines for financial goals
+- **Progress Tracking**: Monitor your progress with visual indicators
+- **Smart Recommendations**: AI-suggested optimizations
+
+### 📈 Stock Insights
+
+Advanced investment analysis:
+
+- **AI Predictions**: Machine learning-powered stock forecasts
+- **Market Analysis**: Real-time market trends and insights
+- **Portfolio Optimization**: Suggestions for better returns
+- **Risk Assessment**: Understand your investment risk profile
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. **Connect Repository**: Link your GitHub repository to Vercel
+2. **Environment Variables**: Add your environment variables in Vercel dashboard
+3. **Deploy**: Automatic deployment on every push to main branch
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel --prod
+```
+
+### Netlify
+
+1. **Build Settings**:
+   - Build command: `npm run build`
+   - Publish directory: `build`
+2. **Environment Variables**: Add in Netlify dashboard
+3. **Deploy**: Connect your repository for automatic deployments
+
+### Docker Deployment
+
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how to get started:
+
+### Development Setup
+
+1. **Fork the repository**
+2. **Clone your fork**
+   ```bash
+   git clone https://github.com/your-username/FlexiFi.git
+   cd FlexiFi
+   ```
+3. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+4. **Make your changes**
+5. **Test thoroughly**
+   ```bash
+   npm test
+   npm run lint
+   ```
+6. **Commit with conventional commits**
+   ```bash
+   git commit -m "feat: add amazing feature"
+   ```
+7. **Push and create PR**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+### Contribution Guidelines
+
+- **Code Style**: Follow the existing code style and use Prettier
+- **Testing**: Add tests for new features
+- **Documentation**: Update README and code comments
+- **Commits**: Use conventional commit messages
+- **Issues**: Check existing issues before creating new ones
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support & Community
+
+### Get Help
+
+- 📧 **Email**: support@flexifi.ai
+- 💬 **Discord**: [Join our community](https://discord.gg/flexifi)
+- 📖 **Documentation**: [docs.flexifi.ai](https://docs.flexifi.ai)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/your-username/FlexiFi/issues)
+
+### Stay Updated
+
+- 🐦 **Twitter**: [@FlexiFiAI](https://twitter.com/FlexiFiAI)
+- 📱 **LinkedIn**: [FlexiFi Company Page](https://linkedin.com/company/flexifi)
+- 📰 **Blog**: [blog.flexifi.ai](https://blog.flexifi.ai)
+
+---
+
+<div align="center">
+  <p><strong>Made with ❤️ by the FlexiFi Team</strong></p>
+  <p>Transform your financial future with AI-powered insights</p>
+
+  [![Star on GitHub](https://img.shields.io/github/stars/your-username/FlexiFi?style=social)](https://github.com/your-username/FlexiFi)
+  [![Follow on Twitter](https://img.shields.io/twitter/follow/FlexiFiAI?style=social)](https://twitter.com/FlexiFiAI)
+</div>
