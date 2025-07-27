@@ -1,7 +1,7 @@
 # FlexiFi AI 🚀
 
 <div align="center">
-  <img src="assets/flexifi-hero-image.png" alt="FlexiFi AI Dashboard" width="800"/>
+  <img src="./Screenshot 2025-07-27 105623.png" alt="FlexiFi AI Dashboard" width="800"/>
 
   **Your AI-Powered Financial Assistant is Here**
 
@@ -393,25 +393,7 @@ We welcome contributions! Here's how to get started:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support & Community
-
-### Get Help
-
-- 📧 **Email**: support@flexifi.ai
-- 💬 **Discord**: [Join our community](https://discord.gg/flexifi)
-- 📖 **Documentation**: [docs.flexifi.ai](https://docs.flexifi.ai)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/your-username/FlexiFi/issues)
-
-### Stay Updated
-
-- 🐦 **Twitter**: [@FlexiFiAI](https://twitter.com/FlexiFiAI)
-- 📱 **LinkedIn**: [FlexiFi Company Page](https://linkedin.com/company/flexifi)
-- 📰 **Blog**: [blog.flexifi.ai](https://blog.flexifi.ai)
-
----
-
-<div align="center">
-  <p><strong>Made with ❤️ by the FlexiFi Team</strong></p>
+Made with ❤️ by the FlexiFi Team</strong></p>
   <p>Transform your financial future with AI-powered insights</p>
 
   [![Star on GitHub](https://img.shields.io/github/stars/your-username/FlexiFi?style=social)](https://github.com/your-username/FlexiFi)
