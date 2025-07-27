@@ -1,0 +1,120 @@
+.auth-callback {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  padding: 2rem;
+}
+
+.auth-callback-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-callback-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.auth-callback-card.success {
+  border-color: rgba(34, 197, 94, 0.3);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+.auth-callback-card.error {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.auth-callback-icon {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  color: #8B5CF6;
+  animation: spin 1s linear infinite;
+}
+
+.success-icon {
+  color: #22c55e;
+}
+
+.error-icon {
+  color: #ef4444;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.auth-callback-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.auth-callback-message {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.retry-btn {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+}
+
+.retry-btn:hover {
+  box-shadow: 0 6px 30px rgba(139, 92, 246, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .auth-callback {
+    padding: 1rem;
+  }
+  
+  .auth-callback-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .auth-callback-title {
+    font-size: 1.5rem;
+  }
+  
+  .auth-callback-message {
+    font-size: 1rem;
+  }
+  
+  .auth-callback-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
