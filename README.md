@@ -1,7 +1,7 @@
 # FlexiFi AI 🚀
 
 <div align="center">
-  <img src="assets/flexifi-hero-image.png" alt="FlexiFi AI Dashboard" width="800"/>
+  <img src="./Screenshot 2025-07-27 105623.png" alt="FlexiFi AI Dashboard" width="800"/>
 
   **Your AI-Powered Financial Assistant is Here**
 
