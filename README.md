@@ -392,10 +392,3 @@ We welcome contributions! Here's how to get started:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Made with ❤️ by the FlexiFi Team</strong></p>
-  <p>Transform your financial future with AI-powered insights</p>
-
-  [![Star on GitHub](https://img.shields.io/github/stars/your-username/FlexiFi?style=social)](https://github.com/your-username/FlexiFi)
-  [![Follow on Twitter](https://img.shields.io/twitter/follow/FlexiFiAI?style=social)](https://twitter.com/FlexiFiAI)
-</div>
